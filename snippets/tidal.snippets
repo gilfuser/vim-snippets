@@ -1,4 +1,192 @@
 snippet d1
-	d1 \$ s "${1}" ${0}
-snippet ev
-	every ${1} (${2}) ${0}
+d1 \$ s "${1}" ${0}
+endsnippet
+
+snippet ap
+append (${1}) (${2}) ${0}
+endsnippet
+
+
+snippet ap'
+append' (${1}) (${2}) ${0}
+endsnippet
+
+snippet ca
+cat [
+  ${1},
+  ${2}
+]${0}
+endsnippet
+
+snippet rc
+randcat [
+  ${1},
+  ${2},
+  ${3}
+]
+${0}
+endsnippet
+
+snippet spl
+seqPLoop [
+  ${1},
+  ${2},
+  ${3}
+]
+${0}
+endsnippet
+
+snippet st
+stack [
+  ${1},
+  ${2},
+  ${3}
+]
+${0}
+endsnippet
+
+snippet su
+superimpose (${1}) $ ${2}
+${0}
+endsnippet
+
+snippet we
+wedge (${1:1}/${2:4}) (${3}) (${4})
+${0}
+endsnippet
+
+snippet int
+interlace (${1}) (${2}) ${0}
+endsnippet
+
+snippet spi
+spin ${1} $ ${2}
+endsnippet
+
+snippet wea
+weave ${1} (${2} ${3}) [
+  ${4},
+  ${5},
+  ${6}
+] ${0}
+endsnippet
+
+snippet eve
+every ${1} (${2}) $ ${3} ${0}
+endsnippet
+
+snippet fol
+foldEvery [${1}, ${2}, ${3}] (${4}) ${0}
+endsnippet
+
+snippet som
+sometimesBy ${1} (${2}) $
+endsnippet
+
+snippet whe
+whenmod ${1} ${2} (${3}) $ (${4}) ${0}
+endsnippet
+
+snippet wit
+within (${1:0.25}, ${2:0.5}) (${3}) $
+endsnippet
+
+snippet <~
+(${1} <~) ${0}
+endsnippet
+
+snippet ~>
+(${1} ~>) ${0}
+endsnippet
+
+snippet cho
+(choose [${1}, ${2}, ${3}]) ${0}
+endsnippet
+
+snippet deb
+degradeBy ${1} $ ${0}
+endsnippet
+
+snippet fit
+(fit ${1:3} [${2}, ${3}, ${4}, ${5}, ${6}, ${7}] "${8:0}, ${9:[~ 1], ${10:2}, ${11:1}}") ${0}
+endsnippet
+
+snippet fit'
+(fit' $1 $2 "${3} ${4}" "${5} ${6}") ${0}
+endsnippet
+
+snippet ite
+iter ${1} $ ${0}
+endsnippet
+
+snippet pal
+palindrome $ ${0}
+endsnippet
+
+snippet slo
+slow ${1} ${0}
+endsnippet
+
+snippet spr
+spread ${1} $ ${0}
+endsnippet
+
+snippet spr$
+spread ($) [${1}, ${2}, ${3}] $ ${4} ${0}
+endsnippet
+
+snippet tru
+trunc ${1:0.75} $ ${0}
+endsnippet
+
+snippet zoo
+zoom (${1:0.25}, ${2:0.75}) $ ${0}
+endsnippet
+
+snippet jux
+juxBy ${1:0.75} (${2}) $ ${0}
+endsnippet
+
+# jux'
+
+#jux4
+
+snippet sma
+smash ${1} [${2}, ${3}, ${4}] $ ${0}
+endsnippet
+
+snippet cho
+chop "<${1:12} ${2:16}>" $ ${0}
+endsnippet
+
+snippet gap
+gap "<${1:3}, ${2:4}>" $
+endsnippet
+
+snippet str
+striate "[${1:8}, ${2:5}]" $ ${0}
+endsnippet
+
+snippet str'
+striate' ${1} (${2:1}/${2}) $ ${0}
+endsnippet
+
+snippet strL
+striateL ${1} ${2} $ ${0}
+endsnippet
+
+snippet strL'
+striateL' ${1} ${2} ${3:2} $ ${0}
+endsnippet
+
+# striateO
+
+snippet stu
+stut ${1:4} ${2:0.75} ${3:(1/6)} $ ${0}
+endsnippet
+
+snippet stu'
+stut' ${1:2} ${2:(1/3)} ( # ${3}) $ ${0}
+endsnippet
+
+
